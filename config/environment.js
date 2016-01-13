@@ -16,12 +16,11 @@ module.exports = function(environment) {
 
     contentSecurityPolicy: {
       'default-src': "'none'",
-      'script-src': "* 'unsafe-inline' 'unsafe-eval' use.typekit.net connect.facebook.net maps.googleapis.com maps.gstatic.com",
+      'script-src': "* 'unsafe-inline' 'unsafe-eval' use.typekit.net",
       'font-src': "* data: use.typekit.net",
       'connect-src': "*",
       'img-src': "*",
       'style-src': "* 'unsafe-inline' use.typekit.net",
-      'frame-src': "s-static.ak.facebook.com static.ak.facebook.com www.facebook.com"
     },
 
     APP: {
