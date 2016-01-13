@@ -2,6 +2,9 @@
 git branch -D gh-pages
 git push origin --delete gh-pages
 git checkout -b gh-pages
+rm -rf dist/
+rm -rf assets/
+rm index.html
 ember build --environment production
 git rm -rf app addon config tests
 git rm -rf Brocfile.js bower.json package.json testem.json
