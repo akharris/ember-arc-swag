@@ -1,10 +1,14 @@
 <nav class="navbar navbar-default navbar-static-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      {{#link-to 'index' class="navbar-brand"}}
-        Arc<span class="gis">GIS</span> Open Data
-      {{/link-to}}
-    </div>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Arc<span class="gis">GIS</span>span> Open Data</a>
+    </div><!-- /.navbar-header -->
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
@@ -21,13 +25,25 @@
           </a>
         </li>
       </ul>
-    </div>
-  </div>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
 </nav>
+
 <div class="cal-header">
   <div class="container">
     <h3>Open Data API Explorer</h3>
     <ul class="nav nav-tabs">
+      <li role="presentation" class="dropdown visible-xs-block">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+          <span class="glyphicon glyphicon-dashboard" aria-hiden="true"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+          <li>{{#link-to 'api-explorer'}}Api Explorer{{/link-to}}</li>
+          <li>{{#link-to 'documentation'}}Documentation{{/link-to}}</li>
+          <li>{{#link-to 'guides'}}Guides{{/link-to}}</li>
+          <li>{{#link-to 'contact-the-developers'}}Contact The Developers{{/link-to}}</li>
+        </ul>
+      </li>
       <li role="presentation" class="hidden-xs">
         {{#link-to 'api-explorer' }}Api Explorer{{/link-to}}
       </li>
