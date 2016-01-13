@@ -6,6 +6,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('api-explorer', function() {
+    this.route('env', { path: ':env' });
+  });
 });
 
 export default Router;

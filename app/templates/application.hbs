@@ -27,8 +27,19 @@
 <div class="cal-header">
   <div class="container">
     <h3>ArcGIS Open Data API Explorer</h3>
+    <ul class="nav nav-tabs">
+      <li role="presentation" class="hidden-xs">
+        {{#link-to 'api-explorer.env' 'dev' }}Dev{{/link-to}}
+      </li>
+      <li role="presentation" class="hidden-xs">
+        {{#link-to 'api-explorer.env' 'qa' }}QA{{/link-to}}
+      </li>
+      <li role="presentation" class="hidden-xs">
+        {{#link-to 'api-explorer.env' 'production' }}Production{{/link-to}}
+      </li>
+    </ul>
   </div>
 </div>
 
 <!-- application.hbs -->
-{{swagger-ui url="https://opendata.arcgis.com/api/v2/swagger.json" class="container"}}
+{{outlet}}
