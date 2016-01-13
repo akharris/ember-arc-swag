@@ -5,3 +5,14 @@ $icon-font-path: './fonts/';
 
 /* Now bootstrap,  */
 @import "bootstrap";
+
+.nav-default {
+  border-color: #efefef;
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
