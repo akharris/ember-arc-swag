@@ -1,9 +1,9 @@
 <nav class="navbar navbar-default navbar-static-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a href="#" class="navbar-brand">
+      {{#link-to 'index' class="navbar-brand"}}
         Arc<span class="gis">GIS</span> Open Data
-      </a>
+      {{/link-to}}
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -32,10 +32,13 @@
         {{#link-to 'api-explorer' }}Api Explorer{{/link-to}}
       </li>
       <li role="presentation" class="hidden-xs">
-        {{#link-to 'api-explorer' }}Documentation{{/link-to}}
+        {{#link-to 'documentation' }}Documentation{{/link-to}}
       </li>
       <li role="presentation" class="hidden-xs">
-        {{#link-to 'api-explorer' }}Contact{{/link-to}}
+        {{#link-to 'guides' }}Guides{{/link-to}}
+      </li>
+      <li role="presentation" class="hidden-xs">
+        {{#link-to 'contact-the-developers' }}Contact The Developers{{/link-to}}
       </li>
     </ul>
   </div>
