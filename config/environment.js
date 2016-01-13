@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'ember-practice',
+    modulePrefix: 'ember-arc-swag',
     environment: environment,
     rootURL: '/',
     baseURL: '/',

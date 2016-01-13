@@ -1,7 +1,7 @@
 {
-  "name": "ember-practice",
+  "name": "ember-arc-swag",
   "version": "0.0.0",
-  "description": "Small description for ember practice goes here",
+  "description": "Swagger UI for the ArcGIS Open Data API using Ember",
   "private": true,
   "directories": {
     "doc": "doc",
