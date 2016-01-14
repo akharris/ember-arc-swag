@@ -1,3 +1,8 @@
+<div class="alert alert-info alert-dismissable" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  You can point the Swagger UI towards Dev, QA, or Production
+</div>
+
 <div class="btngroups" role="group" aria-label="...">
   <button {{action 'updateUrl' 'https://opendatadev.arcgis.com/api/v2/swagger.json'}} 
     type="button" class="btn btn-default {{if isDev 'active' ''}}">Dev</button>
@@ -6,4 +11,5 @@
   <button {{action 'updateUrl' 'https://opendata.arcgis.com/api/v2/swagger.json'}} 
     type="button" class="btn btn-default {{if isProd 'active' '' }}">Production</button>
 </div>
+
 {{swagger-ui url="https://opendataqa.arcgis.com/api/v2/swagger.json"}}
