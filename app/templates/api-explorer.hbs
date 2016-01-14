@@ -1,1 +1,9 @@
+<div class="btngroups" role="group" aria-label="...">
+  <button {{action 'updateUrl' 'https://opendatadev.arcgis.com/api/v2/swagger.json'}} 
+    type="button" class="btn btn-default {{if isDev 'active' ''}}">Dev</button>
+  <button {{action 'updateUrl' 'https://opendataqa.arcgis.com/api/v2/swagger.json'}} 
+    type="button" class="btn btn-default {{if isQa 'active' ''}}">QA</button>
+  <button {{action 'updateUrl' 'https://opendata.arcgis.com/api/v2/swagger.json'}} 
+    type="button" class="btn btn-default {{if isProd 'active' '' }}">Production</button>
+</div>
 {{swagger-ui url="https://opendataqa.arcgis.com/api/v2/swagger.json"}}
