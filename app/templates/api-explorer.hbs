@@ -4,6 +4,8 @@
 </div>
 
 <div class="btngroups" role="group" aria-label="...">
+  <button {{action 'updateUrl' 'http://localdata.arcgis.com:3000/api/v2/swagger.json'}} 
+    type="button" class="btn btn-default {{if isLocal 'active' ''}}">Local</button>
   <button {{action 'updateUrl' 'https://opendatadev.arcgis.com/api/v2/swagger.json'}} 
     type="button" class="btn btn-default {{if isDev 'active' ''}}">Dev</button>
   <button {{action 'updateUrl' 'https://opendataqa.arcgis.com/api/v2/swagger.json'}} 

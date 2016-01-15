@@ -24,6 +24,7 @@ module.exports = function(environment) {
     },
 
     APP: {
+      swaggerRoot: 'http://localdata.arcgis.com:3000/api/v2/swagger.json'
       // Here you can pass flags/options to your application instance
       // when it is created
     },

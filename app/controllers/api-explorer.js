@@ -1,7 +1,8 @@
 import Ember from 'ember';
+import config from '../config/environment';
 
 export default Ember.Controller.extend({
-  swaggerUrl: 'https://opendataqa.arcgis.com/api/v2/swagger.json',
+  swaggerUrl: config.APP.swaggerRoot,
   env: Ember.computed('swaggerUrl', function() {
     let url = this.get('swaggerUrl');
     let env;
@@ -12,11 +13,17 @@ export default Ember.Controller.extend({
       env = 'qa';
     } else if (url.indexOf('opendata') !== -1) {
       env = 'production';
+    } else if (url.indexOf('localdata') !== -1) {
+      env = 'local';
     } else {
       env = 'qa';
     }
 
     return env;
+  }),
+
+  isLocal: Ember.computed('env', function() {
+    return this.get('env') === 'local';
   }),
   isDev: Ember.computed('env', function() {
     return this.get('env') === 'dev';
