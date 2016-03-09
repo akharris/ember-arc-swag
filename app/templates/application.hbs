@@ -26,31 +26,6 @@
 <div class="cal-header">
   <div class="container">
     <h3>Open Data API Explorer</h3>
-    <ul class="nav nav-tabs">
-      <li role="presentation" class="dropdown visible-xs-block">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-          <span class="glyphicon glyphicon-dashboard" aria-hiden="true"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu">
-          <li>{{#link-to 'api-explorer'}}Api Explorer{{/link-to}}</li>
-          <li>{{#link-to 'documentation'}}Documentation{{/link-to}}</li>
-          <li>{{#link-to 'guides'}}Guides{{/link-to}}</li>
-          <li>{{#link-to 'contact-the-developers'}}Contact The Developers{{/link-to}}</li>
-        </ul>
-      </li>
-      <li role="presentation" class="hidden-xs">
-        {{#link-to 'api-explorer' }}Api Explorer{{/link-to}}
-      </li>
-      <li role="presentation" class="hidden-xs">
-        {{#link-to 'documentation' }}Documentation{{/link-to}}
-      </li>
-      <li role="presentation" class="hidden-xs">
-        {{#link-to 'guides' }}Guides{{/link-to}}
-      </li>
-      <li role="presentation" class="hidden-xs">
-        {{#link-to 'contact-the-developers' }}Contact The Developers{{/link-to}}
-      </li>
-    </ul>
   </div>
 </div>
 
@@ -61,5 +36,5 @@
   </div>
 
   <!-- application.hbs -->
-  {{outlet}}
+{{swagger-ui url=swaggerUrl}}
 </div>
